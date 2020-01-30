@@ -5,8 +5,9 @@ import { BlogComponent } from './blog/blog.component';
 import { PagesComponent } from './pages/pages.component';
 import { ElementsComponent } from './elements/elements.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { FeaturesComponent } from './features/features.component'
-import { ShopComponent } from './shop/shop.component'
+import { FeaturesComponent } from './features/features.component';
+import { ShopComponent } from './shop/shop.component';
+import {EnterpriceComponent} from './layouts/enterprice/enterprice.component';
 export const routes: Routes = [
   {
     path: '',
@@ -15,55 +16,7 @@ export const routes: Routes = [
   },
   {
     path: 'landing',
-    component: LandingComponent
-  },
-  {
-    path: 'blog',
-    component: BlogComponent,
-    loadChildren: './blog/blog.module#BlogModule',
-    data: {
-      breadcrumb: "Blog"
-    }
-  },
-  {
-    path: 'page',
-    component: PagesComponent,
-    loadChildren: './pages/pages.module#PagesModule',
-    data: {
-      breadcrumb: "Pages"
-    }
-  },
-  {
-    path: 'elements',
-    component: ElementsComponent,
-    loadChildren: './elements/elements.module#ElementsModule',
-    data: {
-      breadcrumb: "Elements"
-    }
-  },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent,
-    loadChildren: './portfolio/portfolio.module#PortfolioModule',
-    data: {
-      breadcrumb: "Portfolio"
-    }
-  },
-  {
-    path: 'shop',
-    component: ShopComponent,
-    loadChildren: './shop/shop.module#ShopModule',
-    data: {
-      breadcrumb: "Shop"
-    }
-  },
-  {
-    path: 'features',
-    component: FeaturesComponent,
-    loadChildren: './features/features.module#FeaturesModule',
-    data: {
-      breadcrumb: "Features"
-    }
+    component: EnterpriceComponent
   }
 
 ];
