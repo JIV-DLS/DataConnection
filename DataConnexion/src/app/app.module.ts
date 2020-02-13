@@ -18,12 +18,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from 'ng2-scroll-to-el';
 import { SharedModule } from './shared/shared.module'
+import {AccueilVideoComponent} from "./accueil-video/accueil-video.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingComponent
-  ],
+    declarations: [
+        AppComponent,
+        LandingComponent,
+        AccueilVideoComponent
+    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
