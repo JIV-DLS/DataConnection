@@ -8,17 +8,18 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FeaturesComponent } from './features/features.component'
 import { ShopComponent } from './shop/shop.component'
 import {EnterpriceComponent} from './layouts/enterprice/enterprice.component';
+import {AccueilVideoComponent} from "./accueil-video/accueil-video.component";
 export const routes: Routes = [
   {
     path: '',
-    component: EnterpriceComponent
+    //redirectTo: 'landing',
+    //pathMatch: 'full',
+    component: AccueilVideoComponent
   },
   {
     path: 'landing',
     component: EnterpriceComponent
   }
-
-
 ];
 
 @NgModule({
