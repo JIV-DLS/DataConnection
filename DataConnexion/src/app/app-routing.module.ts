@@ -5,19 +5,19 @@ import { BlogComponent } from './blog/blog.component';
 import { PagesComponent } from './pages/pages.component';
 import { ElementsComponent } from './elements/elements.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { FeaturesComponent } from './features/features.component';
-import { ShopComponent } from './shop/shop.component';
+import { FeaturesComponent } from './features/features.component'
+import { ShopComponent } from './shop/shop.component'
 import {EnterpriceComponent} from './layouts/enterprice/enterprice.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'landing',
-    pathMatch: 'full',
+    component: EnterpriceComponent
   },
   {
     path: 'landing',
     component: EnterpriceComponent
   }
+
 
 ];
 
