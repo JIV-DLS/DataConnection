@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Background</title>
+  <title>DataXconnexion</title>
 </head>
 
 <body>
 
 <div class="section">
 
-  <h1>Welcome To Paradise</h1>
+  <h1 [ngStyle]="{color:'wight'}" *ngIf="secondes>=6">DataXconnexion</h1>
 
   <div class="video-container">
-    <div class="color-overlay"></div>
-    <video autoplay="autoplay" loop muted>
-      <source src="../assets/video/video.mp4" type="video/mp4">
+
+    <video (ended)="goToTheNextPage()" autoplay="autoplay">
+      <source src="assets/video/video.mp4" type="video/mp4">
     </video>
   </div>
 

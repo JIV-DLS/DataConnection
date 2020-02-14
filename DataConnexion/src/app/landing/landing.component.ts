@@ -14,6 +14,7 @@ export class LandingComponent implements OnInit {
     this.colorPicker.setColorScheme('landing');
   }
 
+
   portfolio = [
     {
       img: 'assets/images/landing/portfolio/1.jpg',

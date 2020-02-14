@@ -11,16 +11,15 @@ import {EnterpriceComponent} from './layouts/enterprice/enterprice.component';
 import {AccueilVideoComponent} from "./accueil-video/accueil-video.component";
 export const routes: Routes = [
   {
-    path: 'Acceuil',
+    path: '',
     //redirectTo: 'landing',
     //pathMatch: 'full',
     component: AccueilVideoComponent
   },
   {
     path: 'landing',
-    component: EnterpriceComponent
+    component: LandingComponent
   }
-
 ];
 
 @NgModule({
